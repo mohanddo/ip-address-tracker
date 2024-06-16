@@ -1,0 +1,76 @@
+#ip_address_search {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  color: #2c2c2c;
+  height: 58px;
+  width: 497px;
+  border-start-start-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px solid white;
+  padding-left: 20px;
+  outline: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+#ip_address_search:hover {
+  cursor: pointer;
+}
+
+#ip_address_search::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+
+.search_button {
+  padding: 0;
+  height: 58px;
+  width: 58px;
+  background-color: black;
+  border-color: black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px solid black;
+}
+
+.search_button:hover {
+  cursor: pointer;
+  background-color: #3f3f3f;
+  border: 1px solid #3f3f3f;
+}
+
+.SearchBarContainer {
+  display: flex;
+  position: fixed; /* Set position to relative */
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999; /* Set a higher z-index to ensure it appears above other elements */
+  margin-bottom: 20px; /* Example margin to create space between elements */
+}
+
+@media (max-width: 450px) {
+  #ip_address_search {
+    width: 270px;
+    height: 50px;
+  }
+
+  .search_button {
+    height: 50px;
+  }
+
+  .SearchBarContainer {
+    top: 50px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 1024px) {
+  #ip_address_search {
+    width: 350px;
+  }
+}

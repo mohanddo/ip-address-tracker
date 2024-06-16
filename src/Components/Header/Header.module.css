@@ -1,0 +1,31 @@
+.header {
+  background-image: url("../../assets/images/pattern-bg-desktop.png");
+  height: 35vh;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 500;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 1024px) {
+  .header {
+    height: 30vh;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+}
